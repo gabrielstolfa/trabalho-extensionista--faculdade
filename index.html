@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saia do Sedentarismo — Login</title>
+  <link rel="stylesheet" href="style/index.css">
+  <script type="module" src="js/index.js" defer></script>
+</head>
+<body>
+  <div class="login-bg"></div>
+  <main class="login-wrap container">
+    <header class="login-header">
+      <h1>Saia do Sedentarismo</h1>
+      <p class="sub">Pequenos hábitos. Grandes resultados.</p>
+    </header>
+
+    <section id="registerSection" class="auth-grid ">
+      <div id="starterDiv" class="card">
+        <h2>Boas vindas!</h2>
+        <p class="muted">Você já começou a se exercitar conosco?</p>
+        <div class="row gap">
+          <button id="toLoginSectionBtn" class="btn btn-cta">Sim</button>
+          <button id="toRegister" class="btn btn-outline">Não</button>
+        </div>
+      </div>
+
+      <div id="registerDiv" class="card hidden">
+        <h2>Vamos se cadastrar</h2>
+        <form id="registerForm" onsubmit="return false;">
+          <label>Nome completo</label>
+          <input id="newUserName" type="text" placeholder="Digite seu nome">
+          <label>Apelido</label>
+          <input id="newNickName" type="text" placeholder="Informe seu apelido">
+          <div class="row gap">
+            <button id="saveNewUserBtn" type="button" class="btn btn-cta">Cadastrar</button>
+            <button id="backToStartTwo" type="button" class="btn btn-link">Voltar</button>
+          </div>
+          <p id="registerError" class="error"></p>
+        </form>
+      </div>
+
+      <div id="loginDiv" class="card hidden">
+        <h2>Entrar</h2>
+        <form onsubmit="return false;">
+          <label>Nome completo</label>
+          <input id="userName" type="text" placeholder="Digite seu nome">
+          <label>Apelido</label>
+          <input id="nickName" type="text" placeholder="Informe seu apelido">
+          <div class="row gap">
+            <button id="loginBtn" type="button" class="btn btn-cta">Entrar</button>
+            <button id="backToStart" type="button" class="btn btn-link">Voltar</button>
+          </div>
+          <p id="loginError" class="error"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

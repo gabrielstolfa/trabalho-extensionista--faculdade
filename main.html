@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saia do Sedentarismo — Treinos</title>
+
+  <link rel="stylesheet" href="./style/main.css">
+  <script type="module" src="js/index.js" defer></script>
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header class="topbar">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="brand-title">Saia do Sedentarismo</h1>
+        <p class="brand-sub">Pequenos hábitos. Grandes resultados.</p>
+      </div>
+
+      <div id="helloDiv" class="user-area">
+        <div class="welcome">
+          <span class="small-muted">Olá,</span>
+          <strong id="currentUserName" class="user-name">Usuário</strong>
+        </div>
+        <div class="actions">
+          <button id="changeInfo" class="btn btn-ghost">Recomeçar</button>
+          <button id="logout" class="btn btn-primary">Sair</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-card">
+    <section class="hero">
+      <div class="hero-left">
+        <h2 class="hero-title">Seu plano de treino</h2>
+        <p class="hero-sub">Responda algumas perguntas e gere um treino baseado no seu nível e dias disponíveis.</p>
+      </div>
+
+      <div class="hero-right">
+        <div id="questionsDiv" class="questions-block">
+          <button id="start" class="btn btn-cta">Começar</button>
+        </div>
+        <p class="msgError" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="btnsSection" class="days-row hidden" aria-label="Escolha o dia">
+      <button id="dayOneBtn" class="btn btn-pill">Dia 1</button>
+      <button id="dayTwoBtn" class="btn btn-pill">Dia 2</button>
+      <button id="dayThreeBtn" class="btn btn-pill">Dia 3</button>
+      <button id="dayFourBtn" class="btn btn-pill hidden">Dia 4</button>
+      <button id="dayFiveBtn" class="btn btn-pill hidden">Dia 5</button>
+    </section>
+
+    <section id="workoutsSection" class="workouts" aria-live="polite">
+      <!-- JS injeta aqui: day containers com id=day{n}Content e ul/li -->
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <small>Feito com ♥ — mantenha o hábito</small>
+  </footer>
+</body>
+</html>
