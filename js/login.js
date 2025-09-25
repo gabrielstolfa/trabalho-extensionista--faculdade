@@ -76,7 +76,7 @@ function login(){
     // salva o usuário logado no localStorage
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
     // redireciona para a página principal
-    window.location.href = '/main.html';
+    window.location.href = 'main.html';
   
   } else {
     loginError.textContent = 'Usuário ou apelido não encontrados!';
@@ -87,4 +87,5 @@ function login(){
 export{
     createUser,
     login
+
 }
